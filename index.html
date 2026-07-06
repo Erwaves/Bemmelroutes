@@ -63,9 +63,9 @@
         <h1 class="display">TRAILMARKS</h1>
         <p>
           A shortlist of walking routes worth lacing up for. Every route below
-          is a saved map you can open on your phone and follow turn by turn. You
-          can filter by distance, time, elevation or area to find one that fits
-          the daylight you've got left.
+          is a saved map you can open on your phone and follow turn by turn —
+          filter by distance, time, or area to find one that fits the daylight
+          you've got left.
         </p>
       </div>
     </header>
@@ -74,24 +74,30 @@
       <div class="filter-inner">
         <div class="filter-group" data-filter="distance">
           <span class="label">Distance</span>
-          <button class="chip active" data-value="all">All</button>
-          <button class="chip" data-value="short">Under 6 km</button>
-          <button class="chip" data-value="medium">6–11 km</button>
-          <button class="chip" data-value="long">11 km+</button>
+          <div class="chip-row">
+            <button class="chip active" data-value="all">All</button>
+            <button class="chip" data-value="short">Under 6 km</button>
+            <button class="chip" data-value="medium">6–11 km</button>
+            <button class="chip" data-value="long">11 km+</button>
+          </div>
         </div>
         <div class="filter-group" data-filter="time">
           <span class="label">Time</span>
-          <button class="chip active" data-value="all">All</button>
-          <button class="chip" data-value="short">Under 1.5 h</button>
-          <button class="chip" data-value="medium">1.5–3 h</button>
-          <button class="chip" data-value="long">3 h+</button>
+          <div class="chip-row">
+            <button class="chip active" data-value="all">All</button>
+            <button class="chip" data-value="short">Under 1.5 h</button>
+            <button class="chip" data-value="medium">1.5–3 h</button>
+            <button class="chip" data-value="long">3 h+</button>
+          </div>
         </div>
         <div class="filter-group" data-filter="elevation">
           <span class="label">Elevation</span>
-          <button class="chip active" data-value="all">All</button>
-          <button class="chip" data-value="flat">Flat, under 50 m</button>
-          <button class="chip" data-value="rolling">Rolling, 50–150 m</button>
-          <button class="chip" data-value="hilly">Hilly, 150 m+</button>
+          <div class="chip-row">
+            <button class="chip active" data-value="all">All</button>
+            <button class="chip" data-value="flat">Flat, under 50 m</button>
+            <button class="chip" data-value="rolling">Rolling, 50–150 m</button>
+            <button class="chip" data-value="hilly">Hilly, 150 m+</button>
+          </div>
         </div>
         <div class="filter-group">
           <span class="label">Area</span>
