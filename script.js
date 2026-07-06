@@ -39,7 +39,7 @@ function terrainLabel(t) {
 
 const state = { distance: "all", time: "all", elevation: "all", area: "all" };
 
-// populate area select
+// populate area select with the areas found in the route data
 const areaSelect = document.getElementById("area-select");
 [...new Set(routes.map((r) => r.area))].sort().forEach((area) => {
   const opt = document.createElement("option");
@@ -47,22 +47,12 @@ const areaSelect = document.getElementById("area-select");
   opt.textContent = area;
   areaSelect.appendChild(opt);
 });
-areaSelect.addEventListener("change", (e) => {
-  state.area = e.target.value;
-  render();
-});
 
-document.querySelectorAll(".filter-group[data-filter]").forEach((group) => {
-  const key = group.dataset.filter;
-  group.querySelectorAll(".chip").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      group
-        .querySelectorAll(".chip")
-        .forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      state[key] = btn.dataset.value;
-      render();
-    });
+// every filter is a <select data-filter="...">, so one handler drives them all
+document.querySelectorAll("select[data-filter]").forEach((sel) => {
+  sel.addEventListener("change", (e) => {
+    state[sel.dataset.filter] = e.target.value;
+    render();
   });
 });
 

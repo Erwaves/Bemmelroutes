@@ -72,36 +72,36 @@
 
     <div class="filter-bar">
       <div class="filter-inner">
-        <div class="filter-group" data-filter="distance">
+        <div class="filter-group">
           <span class="label">Distance</span>
-          <div class="chip-row">
-            <button class="chip active" data-value="all">All</button>
-            <button class="chip" data-value="short">Under 6 km</button>
-            <button class="chip" data-value="medium">6–11 km</button>
-            <button class="chip" data-value="long">11 km+</button>
-          </div>
+          <select class="chip" id="distance-select" data-filter="distance">
+            <option value="all">All</option>
+            <option value="short">Under 6 km</option>
+            <option value="medium">6–11 km</option>
+            <option value="long">11 km+</option>
+          </select>
         </div>
-        <div class="filter-group" data-filter="time">
+        <div class="filter-group">
           <span class="label">Time</span>
-          <div class="chip-row">
-            <button class="chip active" data-value="all">All</button>
-            <button class="chip" data-value="short">Under 1.5 h</button>
-            <button class="chip" data-value="medium">1.5–3 h</button>
-            <button class="chip" data-value="long">3 h+</button>
-          </div>
+          <select class="chip" id="time-select" data-filter="time">
+            <option value="all">All</option>
+            <option value="short">Under 1.5 h</option>
+            <option value="medium">1.5–3 h</option>
+            <option value="long">3 h+</option>
+          </select>
         </div>
-        <div class="filter-group" data-filter="elevation">
+        <div class="filter-group">
           <span class="label">Elevation</span>
-          <div class="chip-row">
-            <button class="chip active" data-value="all">All</button>
-            <button class="chip" data-value="flat">Flat, under 50 m</button>
-            <button class="chip" data-value="rolling">Rolling, 50–150 m</button>
-            <button class="chip" data-value="hilly">Hilly, 150 m+</button>
-          </div>
+          <select class="chip" id="elevation-select" data-filter="elevation">
+            <option value="all">All</option>
+            <option value="flat">Flat, under 50 m</option>
+            <option value="rolling">Rolling, 50–150 m</option>
+            <option value="hilly">Hilly, 150 m+</option>
+          </select>
         </div>
         <div class="filter-group">
           <span class="label">Area</span>
-          <select class="chip" id="area-select">
+          <select class="chip" id="area-select" data-filter="area">
             <option value="all">All areas</option>
           </select>
         </div>
