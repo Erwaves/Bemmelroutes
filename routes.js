@@ -11,7 +11,7 @@ const routes = [
     timeMin: 75,
     elevationM: 15,
     description:
-      "Korte route door Nimmerdor. Ideaal om even de benen te strekken. De route maakt een uitstapje naar een Anne Frank kunststukje. Pak gerust wat andere paadjes in Nimmerdor",
+      "Korte route door Nimmerdor. Ideaal om even de benen te strekken. De route maakt een uitstapje naar een Anne Frank kunststukje. Pak gerust wat andere paadjes in Nimmerdor.",
     mapUrl: "https://maps.app.goo.gl/McDKVoi4PBsFo7Gg9",
     imgSeed:
       "https://dgtzuqphqg23d.cloudfront.net/1Q0t-Zb72bet4CKOYSSIF3DARh1kdRrMGwLq1siLeZE-1536x2048.jpg",
