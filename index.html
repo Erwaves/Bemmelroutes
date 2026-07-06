@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trailmarks — Walking Routes</title>
+    <title>Bemmelroutes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap"
@@ -60,12 +60,13 @@
         <div class="eyebrow">
           Elevation +12m · Distance varies · Est. cloud cover: mild
         </div>
-        <h1 class="display">TRAILMARKS</h1>
+        <h1 class="display">VAN BEMMELROUTES</h1>
         <p>
-          A shortlist of walking routes worth lacing up for. Every route below
-          is a saved map you can open on your phone and follow turn by turn —
-          filter by distance, time, or area to find one that fits the daylight
-          you've got left.
+          Een shortlist met wandelroutes die het waard zijn om je wandelschoenen
+          voor aan te trekken. Elke route hieronder is een opgeslagen kaart die
+          je op je telefoon kunt openen en stap voor stap kunt volgen. Filter op
+          afstand, tijd, hoogtemeters of gebied om er een te vinden die past bij
+          het daglicht dat je nog over hebt.
         </p>
       </div>
     </header>
@@ -73,36 +74,36 @@
     <div class="filter-bar">
       <div class="filter-inner">
         <div class="filter-group">
-          <span class="label">Distance</span>
+          <span class="label">Afstand</span>
           <select class="chip" id="distance-select" data-filter="distance">
-            <option value="all">All</option>
-            <option value="short">Under 6 km</option>
+            <option value="all">Alles</option>
+            <option value="short">Tot 6 km</option>
             <option value="medium">6–11 km</option>
             <option value="long">11 km+</option>
           </select>
         </div>
         <div class="filter-group">
-          <span class="label">Time</span>
+          <span class="label">Duur</span>
           <select class="chip" id="time-select" data-filter="time">
-            <option value="all">All</option>
-            <option value="short">Under 1.5 h</option>
-            <option value="medium">1.5–3 h</option>
-            <option value="long">3 h+</option>
+            <option value="all">Alles</option>
+            <option value="short">Onder 1 h</option>
+            <option value="medium">1–2 h</option>
+            <option value="long">2 h+</option>
           </select>
         </div>
         <div class="filter-group">
-          <span class="label">Elevation</span>
+          <span class="label">Hoogtemeters</span>
           <select class="chip" id="elevation-select" data-filter="elevation">
-            <option value="all">All</option>
-            <option value="flat">Flat, under 50 m</option>
-            <option value="rolling">Rolling, 50–150 m</option>
-            <option value="hilly">Hilly, 150 m+</option>
+            <option value="all">Alles</option>
+            <option value="flat">Vlak, minder dan 50 m</option>
+            <option value="rolling">Glooiend, 50–150 m</option>
+            <option value="hilly">Heuvelachtig, 150 m+</option>
           </select>
         </div>
         <div class="filter-group">
-          <span class="label">Area</span>
+          <span class="label">Gebied</span>
           <select class="chip" id="area-select" data-filter="area">
-            <option value="all">All areas</option>
+            <option value="all">Alle gebieden</option>
           </select>
         </div>
         <div class="result-count mono" id="result-count"></div>
@@ -112,14 +113,12 @@
     <main>
       <div class="grid" id="route-grid"></div>
       <div class="empty-state" id="empty-state" style="display: none">
-        No routes match those filters — try widening one of them.
+        Geen routes voldoen aan deze filters - probeer één van ze uit te
+        breiden.
       </div>
     </main>
 
-    <footer>
-      Routes link out to saved Google Maps directions · Komoot &amp; Strava
-      routes coming later
-    </footer>
+    <footer>Van Bemmelroutes· Erwin de Leeuw · 2026 · Meer volgt</footer>
 
     <script src="routes.js"></script>
     <script src="script.js"></script>

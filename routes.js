@@ -1,5 +1,5 @@
-// Route data for Trailmarks.
-// Add a new route by adding one object to this array — no other file needs to change.
+// Route data for Bemmelroutes.
+// Add a new route by adding one object to this array - no other file needs to change.
 // terrain must be one of: "forest", "heath", "water", "park" (controls the blaze color).
 // elevationM is total elevation gain in meters for the route.
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
     description:
       "A shaded woodland loop through Amersfoort's own forest park, past the small zoo and a chain of ponds. Easy footing throughout, good for an after-work walk.",
     mapUrl: "https://maps.app.goo.gl/k6rXgoeEcpQfcaN69",
-    imgSeed: "birkhoven",
+    imgSeed: "birkhovens",
   },
   {
     title: "Utrechtse Heuvelrug Ridge Walk",

@@ -13,8 +13,8 @@ function distanceBucket(km) {
   return "long";
 }
 function timeBucket(min) {
-  if (min < 90) return "short";
-  if (min <= 180) return "medium";
+  if (min < 60) return "short";
+  if (min <= 120) return "medium";
   return "long";
 }
 function elevationBucket(m) {
