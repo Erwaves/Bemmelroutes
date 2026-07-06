@@ -84,6 +84,7 @@ header.hero .contours {
   border-bottom: 1px solid var(--line);
   padding: 1.1rem 1.5rem;
   backdrop-filter: blur(2px);
+  transition: padding 0.5s ease;
 }
 .filter-inner {
   max-width: 1080px;
@@ -297,5 +298,52 @@ footer {
     width: 100%;
     order: 99;
     text-align: center;
+  }
+
+  /* Compact state: applied once the page is scrolled, so the filter bar
+     stops eating screen space while browsing the route list. */
+  .filter-bar.compact {
+    padding: 0.5rem 1rem;
+  }
+  .filter-bar.compact .filter-inner {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(
+      to right,
+      black calc(100% - 24px),
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      black calc(100% - 24px),
+      transparent 100%
+    );
+  }
+  .filter-bar.compact .filter-inner::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-bar.compact .filter-group {
+    width: auto;
+    flex-direction: row;
+    flex: none;
+    gap: 0.35rem;
+  }
+  .filter-bar.compact .filter-group .label {
+    display: none;
+  }
+  .filter-bar.compact select.chip {
+    width: auto;
+    max-width: 34vw;
+    padding: 0.4rem 1.5rem 0.4rem 0.6rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .filter-bar.compact .result-count {
+    display: none;
   }
 }

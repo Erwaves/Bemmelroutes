@@ -54,6 +54,26 @@ document.querySelectorAll("select[data-filter]").forEach((sel) => {
   });
 });
 
+// Shrink the sticky filter bar once the page is scrolled, so it takes up
+// less space while browsing the route list (mainly matters on mobile).
+const filterBar = document.querySelector(".filter-bar");
+const COMPACT_THRESHOLD = 40;
+let compactTicking = false;
+function updateCompactState() {
+  filterBar.classList.toggle("compact", window.scrollY > COMPACT_THRESHOLD);
+  compactTicking = false;
+}
+window.addEventListener(
+  "scroll",
+  () => {
+    if (!compactTicking) {
+      requestAnimationFrame(updateCompactState);
+      compactTicking = true;
+    }
+  },
+  { passive: true },
+);
+
 function render() {
   const grid = document.getElementById("route-grid");
   const empty = document.getElementById("empty-state");
