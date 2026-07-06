@@ -31,9 +31,7 @@ function formatTime(min) {
 }
 function terrainLabel(t) {
   return (
-    { forest: "Forest", heath: "Heath", water: "Waterside", park: "Parkland" }[
-      t
-    ] || t
+    { forest: "Bos", heath: "Heide", water: "Water", park: "Park" }[t] || t
   );
 }
 
@@ -88,7 +86,7 @@ function render() {
     card.innerHTML = `
       <div class="thumb-wrap">
         <div class="blaze" style="background:${TERRAIN_COLORS[r.terrain]}"></div>
-        <img src="https://picsum.photos/seed/${r.imgSeed}/600/400" alt="${r.title}" loading="lazy">
+        <img src="${r.imgSeed}" alt="${r.title}" loading="lazy">
       </div>
       <div class="card-body">
         <div class="card-top">
@@ -96,9 +94,9 @@ function render() {
           <h3>${r.title}</h3>
         </div>
         <div class="stats-row mono">
-          <div><span class="k">Distance</span>${r.distanceKm} km</div>
-          <div><span class="k">Time</span>${formatTime(r.timeMin)}</div>
-          <div><span class="k">Elevation</span>${r.elevationM} m</div>
+          <div><span class="k">Afstand</span>${r.distanceKm} km</div>
+          <div><span class="k">Duur</span>${formatTime(r.timeMin)}</div>
+          <div><span class="k">Hoogtemeters</span>${r.elevationM} m</div>
         </div>
         <div class="desc">${r.description}</div>
         <a class="go-btn" href="${r.mapUrl}" target="_blank" rel="noopener">Open route →</a>
