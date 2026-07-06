@@ -5,6 +5,8 @@ const TERRAIN_COLORS = {
   park: "var(--blaze-clay)",
 };
 
+// `routes` is defined in routes.js, loaded before this file.
+
 function distanceBucket(km) {
   if (km < 6) return "short";
   if (km <= 11) return "medium";
@@ -14,6 +16,11 @@ function timeBucket(min) {
   if (min < 90) return "short";
   if (min <= 180) return "medium";
   return "long";
+}
+function elevationBucket(m) {
+  if (m < 50) return "flat";
+  if (m <= 150) return "rolling";
+  return "hilly";
 }
 function formatTime(min) {
   const h = Math.floor(min / 60);
@@ -30,7 +37,7 @@ function terrainLabel(t) {
   );
 }
 
-const state = { distance: "all", time: "all", area: "all" };
+const state = { distance: "all", time: "all", elevation: "all", area: "all" };
 
 // populate area select
 const areaSelect = document.getElementById("area-select");
@@ -72,6 +79,11 @@ function render() {
       return false;
     if (state.time !== "all" && timeBucket(r.timeMin) !== state.time)
       return false;
+    if (
+      state.elevation !== "all" &&
+      elevationBucket(r.elevationM) !== state.elevation
+    )
+      return false;
     if (state.area !== "all" && r.area !== state.area) return false;
     return true;
   });
@@ -96,6 +108,7 @@ function render() {
         <div class="stats-row mono">
           <div><span class="k">Distance</span>${r.distanceKm} km</div>
           <div><span class="k">Time</span>${formatTime(r.timeMin)}</div>
+          <div><span class="k">Elevation</span>${r.elevationM} m</div>
         </div>
         <div class="desc">${r.description}</div>
         <a class="go-btn" href="${r.mapUrl}" target="_blank" rel="noopener">Open route →</a>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bemmelroutes</title>
+    <title>Trailmarks — Walking Routes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap"
@@ -58,14 +58,14 @@
       </svg>
       <div class="hero-inner">
         <div class="eyebrow">
-          Elevation +12m · Varied distance · Est. experience: great
+          Elevation +12m · Distance varies · Est. cloud cover: mild
         </div>
-        <h1 class="display">VAN BEMMELROUTES</h1>
+        <h1 class="display">TRAILMARKS</h1>
         <p>
           A shortlist of walking routes worth lacing up for. Every route below
-          is a saved map you can open on your phone and follow turn by turn.
-          Filter by distance, time, or area to find one that fits the daylight
-          you've got left.
+          is a saved map you can open on your phone and follow turn by turn. You
+          can filter by distance, time, elevation or area to find one that fits
+          the daylight you've got left.
         </p>
       </div>
     </header>
@@ -86,6 +86,13 @@
           <button class="chip" data-value="medium">1.5–3 h</button>
           <button class="chip" data-value="long">3 h+</button>
         </div>
+        <div class="filter-group" data-filter="elevation">
+          <span class="label">Elevation</span>
+          <button class="chip active" data-value="all">All</button>
+          <button class="chip" data-value="flat">Flat, under 50 m</button>
+          <button class="chip" data-value="rolling">Rolling, 50–150 m</button>
+          <button class="chip" data-value="hilly">Hilly, 150 m+</button>
+        </div>
         <div class="filter-group">
           <span class="label">Area</span>
           <select class="chip" id="area-select">
@@ -99,11 +106,14 @@
     <main>
       <div class="grid" id="route-grid"></div>
       <div class="empty-state" id="empty-state" style="display: none">
-        No routes match those filters - try widening one of them.
+        No routes match those filters — try widening one of them.
       </div>
     </main>
 
-    <footer>Van Bemmelroutes · Erwin de Leeuw · 2026 · More coming soon</footer>
+    <footer>
+      Routes link out to saved Google Maps directions · Komoot &amp; Strava
+      routes coming later
+    </footer>
 
     <script src="routes.js"></script>
     <script src="script.js"></script>
