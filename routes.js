@@ -42,4 +42,17 @@ const routes = [
     imgSeed:
       "https://dgtzuqphqg23d.cloudfront.net/6ZHZijohKIZD_-YKdwQ2UtP0W9L6AwgxVmw6EvikCYg-2048x1536.jpg",
   },
+  {
+    title: "Bosvijver",
+    area: "Dierenpark",
+    terrain: "water",
+    distanceKm: 9.6,
+    timeMin: 130,
+    elevationM: 62,
+    description:
+      "Wandel over de berg langs het Dierenpark naar de bosvijver en De Uitzichtheuvel. Een mooie route met veel afwisseling. Je kunt de route ook inkorten door de route bij de bosvijver te verlaten en terug te lopen naar het Dierenpark.",
+    mapUrl: "https://maps.app.goo.gl/BccYzpm7L1AFkLSg9",
+    imgSeed:
+      "https://dgtzuqphqg23d.cloudfront.net/uELOqKO1nJ8ubhgUhFfJmuFnhfgrjaWYVky1QmZyA4g-2048x1542.jpg",
+  },
 ];
