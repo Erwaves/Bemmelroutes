@@ -4,7 +4,7 @@
 // elevationM is total elevation gain in meters for the route.
 const routes = [
   {
-    title: "Nimmerdor & Anne Frank",
+    title: "Nimmerdor",
     area: "Nimmerdor",
     terrain: "forest",
     distanceKm: 5.5,
@@ -15,6 +15,19 @@ const routes = [
     mapUrl: "https://maps.app.goo.gl/McDKVoi4PBsFo7Gg9",
     imgSeed:
       "https://dgtzuqphqg23d.cloudfront.net/1Q0t-Zb72bet4CKOYSSIF3DARh1kdRrMGwLq1siLeZE-1536x2048.jpg",
+  },
+  {
+    title: "WWII Memorial",
+    area: "Oud Leusden",
+    terrain: "forest",
+    distanceKm: 10.2,
+    timeMin: 150,
+    elevationM: 60,
+    description:
+      "Route compleet in het teken van de tweede wereldoorlog. Sta stil bij Het Belgenmonument, De Stenen Man, Duitse Flakstelling, Kamp Amersfoort, Sovjet Ereveld en het Anne Frank kunstwerk.",
+    mapUrl: "https://www.komoot.com/tour/3093657956",
+    imgSeed:
+      "https://www.4en5mei.nl/app/uploads/2021/02/amersfoort_man3.jpg",
   },
   {
     title: "Klein Zwitserland",
