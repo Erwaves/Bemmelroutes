@@ -68,4 +68,17 @@ const routes = [
     imgSeed:
       "https://amersfoortseuitjes.nl/wp-content/uploads/sites/22/2023/11/Onze-lieve-vrouwekerkhof-1-1024x978.jpg",
   },
+  {
+    title: "Park Randebroek",
+    area: "Randebroek",
+    terrain: "park",
+    distanceKm: 6.0,
+    timeMin: 80,
+    elevationM: 19,
+    description:
+      "Bezoek het gebied van het oude ziekenhuis. Park Randenbroek. Bezoek onderweg De Vosheuvel, Elisabeth Groen, de uitkijktoren of de bloementuin. Geniet onderweg heen en terug van een Roethof ijsje.",
+    mapUrl: "https://maps.app.goo.gl/fsG8uXVYpwe5UeCw7",
+    imgSeed:
+      "https://nicolerijkersfotografie.nl/wp-content/uploads/2021/05/Nicole-Rijkers-fotografie-Park-Randenbroek-Amersfoort-6.jpg",
+  },
 ];
