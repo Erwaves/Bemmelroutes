@@ -63,7 +63,7 @@ const routes = [
     timeMin: 80,
     elevationM: 12,
     description:
-      "Via Roethof door de groene Vermeerstraat naar het centrum. Loop om de stadsmuur heen langs de Singel en onderweg terug over De Hof.",
+      "Via Roethof door de groene Vermeerstraat naar het centrum. Loop om de stadsmuur heen langs de Singel en onderweg terug over De Hof. Kan ook via de Aldegondestraat.",
     mapUrl: "https://maps.app.goo.gl/AcdT4DuTFKAnYYcf6",
     imgSeed:
       "https://amersfoortseuitjes.nl/wp-content/uploads/sites/22/2023/11/Onze-lieve-vrouwekerkhof-1-1024x978.jpg",
