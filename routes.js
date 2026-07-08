@@ -94,4 +94,17 @@ const routes = [
     imgSeed:
       "https://nicolerijkersfotografie.nl/wp-content/uploads/2021/05/Nicole-Rijkers-fotografie-Park-Randenbroek-Amersfoort-6.jpg",
   },
+  {
+    title: "Zon en Schild",
+    area: "Zon en Schild",
+    terrain: "forest",
+    distanceKm: 8.8,
+    timeMin: 120,
+    elevationM: 77,
+    description:
+      "Rondje door het bos achter Zon en Schild langs.",
+    mapUrl: "https://maps.app.goo.gl/LYRggzYN4M9G5Z6E8",
+    imgSeed:
+      "https://www.amersfoort.nl/sites/default/files/styles/content_uncropped_large/public/2025-09/zorgpark-zon-schild.jpg",
+  },
 ];
