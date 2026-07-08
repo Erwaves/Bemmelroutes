@@ -56,7 +56,7 @@ const routes = [
       "https://dgtzuqphqg23d.cloudfront.net/uELOqKO1nJ8ubhgUhFfJmuFnhfgrjaWYVky1QmZyA4g-2048x1542.jpg",
   },
   {
-    title: "Stads-Singel",
+    title: "Stadssingel",
     area: "Centrum",
     terrain: "park",
     distanceKm: 6.0,
